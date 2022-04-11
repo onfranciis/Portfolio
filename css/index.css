@@ -1,0 +1,360 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --green: #00f151;
+    --yellow: #ffa600;
+    --primary: #7FFFD4;
+    --secondary: #001235;
+    --tertiary: #E1ECF0;
+    --characters: 20;
+}
+
+body{
+    background-color: var(--secondary);
+    font: 1em sans-serif;
+    color: white;
+}
+
+
+
+/*====================
+======================
+=========HEADER=======
+======================
+======================*/
+
+
+#header{
+    height: 350px;
+    width: 100%;
+    background: linear-gradient(90deg, var(--primary), transparent);
+}
+
+nav{
+    background-color: var(--secondary);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#nav_btns{
+    cursor: pointer;
+}
+
+.nav_btn{
+    all: unset;
+    color: var(--tertiary);
+    font-weight: bold;
+    padding: 5px;
+    margin: 5px 5px;
+}
+
+.nav_btn:hover{
+    color: var(--primary);
+}
+
+
+
+/*====================
+======================
+=========NOMEN=======
+======================
+======================*/
+
+#nomen{
+    color: rgb(59, 59, 59);
+    font-size: 3.5rem;
+    text-transform: capitalize;
+    padding: 10px 0 0 20px;
+}
+
+#name{
+    color: var(--secondary);
+    font-weight: bold;
+
+}
+
+#logo{
+    background-color: var(--secondary);
+    color: var(--primary);
+    font-weight: bold;
+    position: sticky;
+    top: 0;
+    padding: 5px 0 5px 15px;
+}
+
+
+
+/*====================
+======================
+====ABOUT SECTION=====
+======================
+======================*/
+
+#about{
+    height: auto;
+    width: calc(100% - 2px);
+    border: 0px transparent solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+#about_text{
+    width: fit-content;
+    font-size: 1rem;
+    line-height: 0.5rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    flex: 60%;
+    max-width: 60%;
+    order: 1;
+    padding: 15px 35px;
+}
+
+#about_header{
+    width:100%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-weight: bold;
+    text-align: center;
+    line-height: 0rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 1rem 0 0 0;
+    margin: 0 0 5px 0;
+
+}
+
+#about_body{
+    color: white;
+    height: auto;
+    font-size: 20px;
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+
+
+#about_image{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    max-width: 40%;
+    align-items: center;
+    justify-content: center;
+    order: 0;
+}
+
+#about_image img{
+    height: 80%;
+    width: 80%;
+}
+
+
+
+/*======================
+========================
+====PROJECT SECTION=====
+========================
+========================*/
+
+#project{
+    height: auto;
+    width: calc(100% - 2px);
+    border: 0px transparent solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+#project_text{
+    width: fit-content;
+    font-size: 1rem;
+    line-height: 0.5rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    flex: 60%;
+    max-width: 60%;
+    order: 0;
+    padding: 15px 35px;
+}
+
+#project_header{
+    width:100%;
+    background-color: aquamarine;
+    color: var(--secondary);
+    font-weight: bold;
+    text-align: center;
+    line-height: 0rem;
+    font-size: 2rem;
+    border-radius: 5px;
+    padding: 1rem 0 0.4rem 0;
+    margin: 0 0 5px 0;
+
+}
+
+#project_body{
+    color: white;
+    height: auto;
+    font-size: 20px;
+    line-height: 40px;
+    padding-bottom: 10px;
+}
+
+
+#project_image{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    flex: 40%;
+    max-width: 40%;
+    align-items: center;
+    order: 1;
+    padding: 0;
+}
+
+#project_image img{
+    width: 80%;
+    height: 80%;
+}
+
+#here{
+    cursor: pointer;
+    display: inline-block;
+}
+
+#here a{
+    all: unset;
+    color: var(--secondary);
+    background-color: var(--primary);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    max-width: fit-content;
+    padding: 0 5px;
+}
+
+.material-icons{
+    color: var(--secondary);
+    align-self: center;
+    padding: 0px;
+    margin: 0;
+}
+
+
+
+/*======================
+========================
+=====SKILLS SECTION=====
+========================
+========================*/
+
+#skills{
+    margin-top: 20px;
+}
+
+#skills-header{
+    width:60%;
+    background-color: var(--primary);
+    color: var(--secondary);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 0 auto 20px auto;
+}
+
+.skills-item{
+    padding-bottom: 30px;
+}
+
+.skills-text{
+    color: white;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+.progress{
+    background: rgb(201, 201, 201);
+    margin-bottom: 5px;
+}
+
+.progress-bar{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#progress-bar1{
+    background-color: rgb(165, 81, 42);
+}
+
+#progress-bar2{
+    background-color: #8080ff;
+}
+
+#progress-bar3{
+    background-color: seagreen;
+}
+
+#progress-bar4{
+    background-color: rgb(154, 0, 192);
+}
+
+#progress-bar5{
+    background-color: rgb(78, 91, 104);
+}
+
+#progress-bar6{
+    background-color: rgb(0, 101, 216);
+}
+
+#progress-bar7{
+    background-color: #c25fe4;
+}
+
+#resume{
+    width: 100%;
+    margin: 50px auto 50px auto;
+    padding: 15px;
+    background-color: rgb(221, 50, 50);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+}
+
+#file-size{
+    color: black;
+    font-size: 10px;
+}
+
+#footer{
+    height: 35px;
+    width: 100%;
+    background-color: var(--primary);
+    color: black;
+    position: relative;
+    bottom: 0;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#footer-text span:first-child{
+    color: var(--secondary);
+}

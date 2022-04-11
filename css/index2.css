@@ -1,0 +1,89 @@
+
+#typewriter_text{
+  font-size: 35px;
+}
+
+.typewriter_effect {
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+  }
+  
+  .typewriter_effect > .text {
+    max-width: 0;
+    animation: typing 2s steps(var(--characters)) 1;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    left: 25px;
+    font: 1em sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: -50px;
+  }
+  /*
+  .typewriter-effect:after {
+    content: " |";
+    animation: blink 1s infinite;
+    animation-timing-function: step-end;
+    font: 1em sans-serif;
+    font-size: 20px;
+  }*/
+
+
+  @keyframes typing {
+    75%,
+    100% {
+      max-width: calc(var(--characters) * 0.9ch);
+    }
+  }
+  
+  @keyframes blink {
+    0%,
+    75%,
+    100% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+  }
+
+  /*************************/
+
+  @keyframes drop {
+    0%{
+      margin-top: -50%;
+      opacity: 0;
+    }
+    50%{
+      margin-top: 20px;
+      opacity: 0.5;
+    }
+    100%{
+      opacity: 1;
+    }
+  }
+
+  @keyframes go {
+    0%{
+      margin-top: 20px;
+      opacity: 1;
+    }
+    50%{
+      margin-top: -50%;
+      opacity: 0;
+    }
+  }/*
+
+  #wrap{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 135, 145, 0);
+    display: none;
+    position: fixed;
+    top: 0;
+
+  }*/
