@@ -5,7 +5,8 @@
 
     #modal1{
         height: auto;
-        width: 95%;
+        width: fit-content;
+        max-width: 98%;
         background: rgba(255, 255, 255, 0);
         border-radius: 15px;
         position: fixed;
@@ -136,7 +137,7 @@
   
     #mail{
     height: fit-content;
-    width: 100%;
+    width: fit-content;
     background-color: rgb(255, 255, 255);
     border: 0px var(--secondary) solid;
     border-radius: 25px;
@@ -144,7 +145,7 @@
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    padding: 10px;
+    padding: 10px 5px 10px 10px;
     margin-bottom: 10px;
   }
   
@@ -159,7 +160,7 @@
     flex-direction: row;
     align-content: center;
     justify-content: center;
-    padding: 0px 10px 0px 0px;
+    padding: 0px 0px 0px 0px;
     margin:  0 auto;
   }
   
@@ -199,7 +200,7 @@
         height: auto;
         width: fit-content;
         background: rgba(255, 255, 255, 0);
-        position: absolute;
+        position: fixed;
         top: 20px;
         left: 50%;
         transform: translate(-50%, 0);/**/
@@ -295,7 +296,7 @@
         height: auto;
         width: fit-content;
         background: rgba(255, 255, 255, 0);
-        position: absolute;
+        position: fixed;
         top: 20px;
         left: 50%;
         transform: translate(-50%, 0);/**/

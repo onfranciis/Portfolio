@@ -348,7 +348,7 @@ nav{
     background-color: var(--primary);
     color: black;
     position: relative;
-    bottom: 0;
+    bottom: 15px;
     padding: 10px;
     text-align: center;
     font-size: 15px;
