@@ -337,6 +337,10 @@ nav{
     background-color: #bd860f;
 }
 
+#progress-bar11{/*SASS*/
+    background-color: #57850e;
+}
+
 #resume{
     width: 100%;
     margin: 50px auto 50px auto;
