@@ -341,6 +341,10 @@ nav{
     background-color: #57850e;
 }
 
+#progress-bar12{
+    background-color: #8d0707;
+}
+
 #resume{
     width: 100%;
     margin: 50px auto 50px auto;
@@ -355,7 +359,7 @@ nav{
 
 #file-size{
     color: black;
-    font-size: 10px;
+    font-size: 15px;
 }
 
 #footer{
